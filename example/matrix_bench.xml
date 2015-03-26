@@ -1,0 +1,338 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark SYSTEM "Format.dtd">
+<benchmark>
+	<Author name="szaidi" />
+	<program name="nom de fonction a tester">
+		<runenv>
+			<group name="hardware">
+				<value name="CPU" value=" Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz" type="text" />
+				<value name="frequency" value="3292.000000" type="float" binary="" />
+				<value name="cores" value="1" type="int" />
+				<value name="processors" value="4" type="int" />
+				<value name="cache_line_size" value="64" type="int" />
+				<value name="cache_size" value="256" type="int" />
+				<group name="extensions">
+					<value value="SSE3 New Instructionsx87 FPU On Chip" type="text" />
+					<value value="Virtual-8086 Mode Enhancement" type="text" />
+					<value value="Debugging Extensions" type="text" />
+					<value value="Page Size Extensions" type="text" />
+					<value value="Time Stamp Counter" type="text" />
+					<value value="RDMSR and WRMSR Support" type="text" />
+					<value value="Physical Address Extensions" type="text" />
+					<value value="Machine Check Exception" type="text" />
+					<value value="CMPXCHG8B Instruction" type="text" />
+					<value value="APIC On Chip" type="text" />
+					<value value="SYSENTER and SYSEXIT" type="text" />
+					<value value="Memory Type Range Registers" type="text" />
+					<value value="PTE Global Bit" type="text" />
+					<value value="Machine Check Architecture" type="text" />
+					<value value="Conditional Move/Compare Instruction" type="text" />
+					<value value="Page Attribute Table" type="text" />
+					<value value="Page Size Extension" type="text" />
+					<value value="CFLUSH Extension" type="text" />
+					<value value="Debug Store" type="text" />
+					<value value="Thermal Monitor and Clock Ctrl" type="text" />
+					<value value="MMX Technology" type="text" />
+					<value value="FXSAVE/FXRSTOR" type="text" />
+					<value value="SSE Extensions" type="text" />
+					<value value="SSE2 Extensions" type="text" />
+					<value value="Self Snoop" type="text" />
+					<value value="Hyper-threading Technology" type="text" />
+					<value value="Thermal Monitor" type="text" />
+					<value value="Pend. Brk. EN." type="text" />
+				</group>
+			</group>
+			<group name="software">
+				<value name="Operating System" value="Windows 6." type="text" />
+				<value name="Load average CPU before the run" value="0.010000" type="double" />
+				<group name="DLL">
+					<value value="C:\Users\szaidi\Desktop\bench_platform\example\Bench.ex" type="text" />
+					<value value="C:\Windows\SYSTEM32\ntdll.dl" type="text" />
+					<value value="C:\Windows\system32\kernel32.dl" type="text" />
+					<value value="C:\Windows\system32\KERNELBASE.dl" type="text" />
+					<value value="C:\Windows\system32\ADVAPI32.dl" type="text" />
+					<value value="C:\Windows\system32\msvcrt.dl" type="text" />
+					<value value="C:\Windows\SYSTEM32\sechost.dl" type="text" />
+					<value value="C:\Windows\system32\RPCRT4.dl" type="text" />
+					<value value="C:\Windows\system32\PSAPI.DL" type="text" />
+					<value value="C:\Windows\system32\USER32.dl" type="text" />
+					<value value="C:\Windows\system32\GDI32.dl" type="text" />
+					<value value="C:\Windows\system32\LPK.dl" type="text" />
+					<value value="C:\Windows\system32\USP10.dl" type="text" />
+					<value value="C:\Windows\system32\IMM32.DL" type="text" />
+					<value value="C:\Windows\system32\MSCTF.dl" type="text" />
+				</group>
+				<group name="VarEnv">
+					<value value="C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\BIN;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\Microsoft.NET\Framework\v3.5;C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\VCPackages;C:\Program Files (x86)\HTML Help Workshop;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools;C:\Program Files (x86)\Windows Kits\8.0\bin\x86;C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools;;C:\gcc\bin;C:\gcc\libexec\gcc\x86_64-pc-mingw32\4.8.1;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.2\libnvvp\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\MinGW\bin;C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin;C:\Python27;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;C:\Program Files (x86)\Intel\Composer XE 2013\bin;C:\Users\szaidi\AppData\Roaming\MiKTeX\2.9\miktex\bin\" type="text" name="PATH" />
+				</group>
+			</group>
+		</runenv>
+		<compile compiler="g++" version_compiler="g++ (GCC) 4.8.1" option="-O0">
+			<value diagnostic="" />
+		</compile>
+	</program>
+	<measure>
+		<paramsettings>
+			<value sizeA="51" />
+			<value sizeB="51" />
+			<value testC="51" />
+			<value testD="100" />
+		</paramsettings>
+		<data>
+			<data-instance value="">
+				<operation name="init">
+					<group name="values">
+						<time value="0.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+				<operation name="generate">
+					<group name="values">
+						<time value="0.500000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+				<operation name="compute">
+					<group name="values">
+						<time value="2.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+			</data-instance>
+		</data>
+	</measure>
+	<measure>
+		<paramsettings>
+			<value sizeA="52" />
+			<value sizeB="51" />
+			<value testC="51" />
+			<value testD="100" />
+		</paramsettings>
+		<data>
+			<data-instance value="">
+				<operation name="init">
+					<group name="values">
+						<time value="0.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+				<operation name="generate">
+					<group name="values">
+						<time value="0.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+				<operation name="compute">
+					<group name="values">
+						<time value="2.500000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+			</data-instance>
+		</data>
+	</measure>
+	<measure>
+		<paramsettings>
+			<value sizeA="51" />
+			<value sizeB="52" />
+			<value testC="51" />
+			<value testD="100" />
+		</paramsettings>
+		<data>
+			<data-instance value="">
+				<operation name="init">
+					<group name="values">
+						<time value="0.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+				<operation name="generate">
+					<group name="values">
+						<time value="0.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+				<operation name="compute">
+					<group name="values">
+						<time value="5.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+			</data-instance>
+		</data>
+	</measure>
+	<measure>
+		<paramsettings>
+			<value sizeA="52" />
+			<value sizeB="52" />
+			<value testC="51" />
+			<value testD="100" />
+		</paramsettings>
+		<data>
+			<data-instance value="">
+				<operation name="init">
+					<group name="values">
+						<time value="0.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+				<operation name="generate">
+					<group name="values">
+						<time value="0.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+				<operation name="compute">
+					<group name="values">
+						<time value="6.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+			</data-instance>
+		</data>
+	</measure>
+	<measure>
+		<paramsettings>
+			<value sizeA="51" />
+			<value sizeB="51" />
+			<value testC="52" />
+			<value testD="100" />
+		</paramsettings>
+		<data>
+			<data-instance value="">
+				<operation name="init">
+					<group name="values">
+						<time value="0.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+				<operation name="generate">
+					<group name="values">
+						<time value="1.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+				<operation name="compute">
+					<group name="values">
+						<time value="4.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+			</data-instance>
+		</data>
+	</measure>
+	<measure>
+		<paramsettings>
+			<value sizeA="52" />
+			<value sizeB="51" />
+			<value testC="52" />
+			<value testD="100" />
+		</paramsettings>
+		<data>
+			<data-instance value="">
+				<operation name="init">
+					<group name="values">
+						<time value="0.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+				<operation name="generate">
+					<group name="values">
+						<time value="0.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+				<operation name="compute">
+					<group name="values">
+						<time value="5.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+			</data-instance>
+		</data>
+	</measure>
+	<measure>
+		<paramsettings>
+			<value sizeA="51" />
+			<value sizeB="52" />
+			<value testC="52" />
+			<value testD="100" />
+		</paramsettings>
+		<data>
+			<data-instance value="">
+				<operation name="init">
+					<group name="values">
+						<time value="0.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+				<operation name="generate">
+					<group name="values">
+						<time value="0.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+				<operation name="compute">
+					<group name="values">
+						<time value="5.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+			</data-instance>
+		</data>
+	</measure>
+	<measure>
+		<paramsettings>
+			<value sizeA="52" />
+			<value sizeB="52" />
+			<value testC="52" />
+			<value testD="100" />
+		</paramsettings>
+		<data>
+			<data-instance value="">
+				<operation name="init">
+					<group name="values">
+						<time value="0.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+				<operation name="generate">
+					<group name="values">
+						<time value="0.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+				<operation name="compute">
+					<group name="values">
+						<time value="4.000000" type="double" unit="ms" />
+						<memory value="0.000000" type="double" unit="Ko" />
+						<throughput value="0.000000" type="double" unit="Ko/s" />
+					</group>
+				</operation>
+			</data-instance>
+		</data>
+	</measure>
+</benchmark>
